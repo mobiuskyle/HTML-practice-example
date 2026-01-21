@@ -1,0 +1,141 @@
+<!--creating lists,tables and buttons in a website-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document 3</title>
+
+    </head>
+    <body>
+        <h1>Store hours</h1>
+        <table style="border: 1;">
+            <tr style="background-color: aqua;">
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+            <tr style="background-color: aqua;">
+                <td>closed</td>
+                <td>9-5</td>
+                <td>10-7</td>
+                <td>10-7</td>
+                <td>3-6</td>
+                <td>5-6</td>
+                <td>closed</td>
+
+
+
+
+
+
+            </tr>
+        </table>
+            <br>
+
+            <!--we have three types of lists:unordered lists,ordered lists and description lists-->
+            <h1>Grocery List</h1>
+            <ul>
+                <li>milk</li>
+                <li>ham</li>
+                <li>bread</li>
+                <li>sausages</li>
+                <li>butter</li>
+                <li>pieces of china</li>
+                <ul>
+                    <li>cups</li>
+                    <li>plates</li>
+                </ul>
+            </ul>
+            <br>
+            <h1>Day in the life</h1>
+            <ol>
+                
+                <li>wake up and take a shower</li>
+                <li>make and eat breakfast</li>
+                <li>finish up last night's assignment</li>
+                <lil>attend my first class</li>
+                <li>go for a 10 min break then attend my second class</li>
+                <li>go for lunch then attend my last class for the day</li>
+                <ol>
+                    <li>probably go for a lil shopping later</li>
+                    <li>finally do some work out before i sleep</li>
+                </ol>
+
+            </ol>
+            
+            <br>
+            <h1>Favorite Wild  Animals</h1>
+            <dl>
+                <dt>elephants</dt>
+                <dd>
+                    Elephants are the largest living land animals. 
+                    Three living species are currently recognised: the African bush elephant (Loxodonta africana), 
+                    the African forest elephant (L. cyclotis), and the Asian elephant (Elephas maximus). 
+
+                </dd>
+
+                <dt>lions</dt>
+                <dd>
+                    The lion (Panthera leo) is a large cat of the genus Panthera, currently ranging only in Sub-Saharan Africa and India.
+
+                </dd>
+                <dt>hippopotamus</dt>
+                <dd>
+                    The hippopotamus (Hippopotamus amphibius; /ˌhɪpəˈpɒtəməs/; pl.: hippopotamuses), often shortened to hippo (pl.: hippos), further qualified as the common hippopotamus, Nile hippopotamus and river hippopotamus, is a large semiaquatic mammal native to sub-Saharan Africa. It is one of only two extant species in the family Hippopotamidae, the other being the pygmy hippopotamus (Choeropsis liberiensis or Hexaprotodon liberiensis). 
+                    Its name comes from the Ancient Greek for "river horse" (ἱπποπόταμος).
+
+                </dd>
+                <dt>leopard</dt>
+                <dd>
+                    The leopard (Panthera pardus) is one of the five extant cat species in the genus Panthera. 
+                    It has a pale yellowish to dark golden fur with dark spots grouped in rosettes. 
+                    Its body is slender and muscular, reaching a length of 92–183 cm (36–72 in) with a 66–102 cm (26–40 in) long tail and a shoulder height of 60–70 cm (24–28 in). Males typically weigh 30.9–72 kg (68–159 lb), and females 20.5–43 kg (45–95 lb).
+
+                </dd>
+            </dl>
+            <!--just turned my button to a hyperlink so wheni click it 
+            it will take me to my lyrics.tml page-->
+            <a href="lyrics.html">
+            <button style="background-color: azure; color: black; border-radius: 5px ;">Click here</button>
+            </a>
+            <br><br>
+            <!--when you click this button it will display hello world on the console 
+            not on the page-->
+            <button onclick="sayHello() "background-color: aquamarine;color: black; border-radius: 20px;">Click me</button>
+            <script>
+                function sayHello()
+                {console.log("Hello World");
+
+                }
+            </script>
+            <!--i am trying to make it that when i press the button it will display the word i want
+            on the page iself and not on the console-->
+            <br><br>
+            <button onclick="document.body.innerHTML" style="background-color: antiquewhite; color: black; border-radius: 5px;">Click me</button>
+            <script>
+                document.body.innerHTML += '<p>Hello world</p>'
+            </script>
+            
+
+            
+            
+
+
+
+        
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+</html>
